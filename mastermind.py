@@ -265,7 +265,7 @@ if __name__ == "__main__":
             if not 1 < maxDigit <= 9:
                 # Max digit arg is out of range
                 _printUsageAndExit("Maximum digit argument out of range: %d."
-                                  % maxDigit)
+                                   % maxDigit)
 
     # Play the game
     play(count, maxDigit)
