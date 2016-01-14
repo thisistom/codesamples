@@ -115,11 +115,11 @@ class Mastermind(object):
     def __generateNewCode(self):
         """
         @rtype: C{list} of C{int}
-        @return: A new set of random numbers according to the current values of
-            self.__maxSize and self.__count. Numbers will be between 1 and
-            self.__maxSize inclusive.
+        @return: A new set of random digits according to the current values of
+            self.__maxDigit and self.__count. The digits will be between 1 and
+            self.__maxDigit inclusive.
         """
-        return [1 + int(random.random() * self.__maxDigit)
+        return [random.randint(1, self.__maxDigit)
                 for x in xrange(self.__count)]
 
     def __splitGuess(self, guess):
