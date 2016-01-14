@@ -69,7 +69,9 @@ class Mastermind(object):
 
     def checkGuess(self, guess):
         """
-        Checks the given guess against the current code.
+        Checks the given guess against the current code. We permit either a
+        single string of digits (e.g. "1234") or space-separated digits
+        (e.g. "1 2 3 4").
 
         @type guess: C{str}
         @rtype: C{int}
