@@ -140,7 +140,7 @@ class Mastermind(object):
             splitGuess = strippedGuess.split()
         else:
             # No spaces - assume this is a single string of digits
-            splitGuess = list(guess)
+            splitGuess = list(strippedGuess)
 
         # Convert all elements to integers and return those which are in the
         # correct range
